@@ -19,7 +19,7 @@ def welcome(Client,message):
     message.reply_video(video="2_5350717343083272678.mp4")
 
     file_name  = url.split("/")[-1]
-    os.remove(file_name)
+    #os.remove(file_name)
 
 def download(url):
     get_response = requests.get(url,stream=True)
