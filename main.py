@@ -16,4 +16,5 @@ def welcome(Client,message):
     fun.download("https://file2directlink.herokuapp.com/65068823684674195530940540/AgADCAUA/2_5350717343083272678.mp4")
     print("im from end")
     message.reply_video(video=file_name)
+    os.remove(file_name)
 bot.run()
