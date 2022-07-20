@@ -20,7 +20,7 @@ def welcome(Client,message):
 
     file_name  = url.split("/")[-1]
     #os.remove(file_name)
-
+    print("endd")
 def download(url):
     get_response = requests.get(url,stream=True)
     file_name  = url.split("/")[-1]
