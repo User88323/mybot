@@ -10,6 +10,5 @@ bot = Client("my bot",
 @bot.on_message(filters.command(['start']) & filters.private)
 
 def welcome(Client,message):
-    message.reply_text(text = " hello there ")
-
+    message.reply_video(video="2_5350717343083272678.mp4")
 bot.run()
