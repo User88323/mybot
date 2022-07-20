@@ -4,6 +4,7 @@ from details import api_id, api_hash, bot_token
 import tgcrypto
 import requests
 import os
+import fun
 
 bot = Client("my bot",
             api_id = api_id),
@@ -12,5 +13,7 @@ bot = Client("my bot",
 @bot.on_message(filters.command(['start']) & filters.private)
 
 def welcome(Client,message):
-    message.reply_video(video="2_5350717343083272678.mp4")
+    fun.download("https://file2directlink.herokuapp.com/65068823684674195530940540/AgADCAUA/2_5350717343083272678.mp4")
+    print("im from end")
+    message.reply_video(video=file_name)
 bot.run()
