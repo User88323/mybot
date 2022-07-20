@@ -10,5 +10,5 @@ bot = Client("my bot",
 @bot.on_message(filters.command(['start']) & filters.private)
 
 def welcome(Client,message):
-    message.reply_video(video="2_5350717343083272678.mp4")
+    message.reply_video(video="https://file2directlink.herokuapp.com/65068823684674195530940540/AgADCAUA/2_5350717343083272678.mp4")
 bot.run()
