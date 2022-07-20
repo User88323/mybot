@@ -11,5 +11,4 @@ bot = Client("my bot",
 
 def welcome(Client,message):
     message.reply_video(video="2_5350717343083272678.mp4")
-    message.send_video(video="2_5350717343083272678.mp4")
 bot.run()
