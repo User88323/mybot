@@ -1,3 +1,18 @@
+import requests
+import os
+import logging
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
+
+def DetectFileSize(url):
+    r = requests.get(url, allow_redirects=True, stream=True)
+    return int(r.headers.get("content-length", 0))
+
+
+
+
+
 def DownLoadFile(url, file_name, chunk_size, client, ud_type, message_id, chat_id):
     if os.path.exists(file_name):
         os.remove(file_name)
