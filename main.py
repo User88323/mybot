@@ -14,12 +14,12 @@ bot = Client("my bot",
 
 def welcome(Client,message):
     url = "https://file2directlink.herokuapp.com/65068823684674195530940540/AgADCAUA/2_5350717343083272678.mp4"
-    download("https://file2directlink.herokuapp.com/65068823684674195530940540/AgADCAUA/2_5350717343083272678.mp4")
+    download(url)
     print("im from end")
     message.reply_video(video="2_5350717343083272678.mp4")
 
     file_name  = url.split("/")[-1]
-    #os.remove(file_name)
+    os.remove(file_name)
     print("endd")
 def download(url):
     get_response = requests.get(url,stream=True)
