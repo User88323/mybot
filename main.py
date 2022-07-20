@@ -2,11 +2,13 @@
 from pyrogram import Client , filters
 from details import api_id, api_hash, bot_token
 import tgcrypto
+import requests
+import os
 
 bot = Client("my bot",
-            api_id = int(os.environ["API_ID"]),
-            api_hash = os.environ["API_HASH"],
-            bot_token = os.environ["BOT_TOKEN"])
+            api_id = api_id),
+            api_hash = api_hash,
+            bot_token = bot_token)
 @bot.on_message(filters.command(['start']) & filters.private)
 
 def welcome(Client,message):
