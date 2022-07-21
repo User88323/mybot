@@ -23,7 +23,7 @@ def welcome(Client,message):
     message.reply_text(text= current)
 
     
-    os.remove(file_name)
+    #os.remove(file_name)
     print("endd")
 def download(url):
     get_response = requests.get(url,stream=True)
