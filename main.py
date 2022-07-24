@@ -28,7 +28,7 @@ def welcome(Client,message):
 
     url = "https://www.pexels.com/video/5532774/download/"
 
-    file_name  = download(url)
+    #file_name  = download(url)
 
     #url = "https://jsoncompare.org/LearningContainer/SampleFiles/Video/MP4/Sample-Video-File-For-Testing.mp4"
 
@@ -36,7 +36,7 @@ def welcome(Client,message):
 
     print("im from end")
 
-    message.reply_video(file_name)
+    #message.reply_video(file_name)
 
     #os.remove(file_name)
 
