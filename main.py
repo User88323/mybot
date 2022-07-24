@@ -15,7 +15,7 @@ bot = Client("my bot",
 
 def welcome(Client,message):
     message.reply_text(text="hi")
-    url = "https://file2directlink.herokuapp.com/65686715824167183548198464/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
+    url = "https://www.pexels.com/video/5532774/download/"
 
     file_name  = download(url)
     #url = "https://www.pexels.com/video/5532774/download/"
