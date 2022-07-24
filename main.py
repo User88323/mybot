@@ -39,6 +39,10 @@ def download(url):
         for chunk in get_response.iter_content(chunk_size=1024):
             if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
+    a = urlparse(url)
+    print(a.path)
+    file_name = os.path.basename(a.path)
+
     return file_name
 
 
