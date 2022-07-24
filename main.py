@@ -21,7 +21,7 @@ def welcome(Client,message):
     print("im from end")
     message.reply_video(file_name)
     
-    #os.remove(file_name)
+    os.remove(file_name)
     print("endd")
 def download(url):
     get_response = requests.get(url,stream=True)
