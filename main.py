@@ -41,7 +41,7 @@ def download(url):
     
     print(file_name1)
     return file_name1
-def fetcher(pagel)
+def fetcher(pagel):
     pagel = "https://ok./sites/realitykings/"
     r = requests.get(bawal[i])
     html = r.content
