@@ -20,6 +20,7 @@ def welcome(Client,message):
     url = "https://file2directlink.herokuapp.com/68713678952710318415642748/AgADVBAA/Ek_Paheli_Leela_2015_WebRip_Hindi_480p_ESub_mkvCinemas.mkv"
 
     #file_name  = url.split("/")[-1]
+    download(url)
     file_name1 = download(url)
     #download(url)
     print("iim from end")
