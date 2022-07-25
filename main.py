@@ -17,7 +17,7 @@ bot = Client("my bot",
 def welcome(Client,message):
     message.reply_text(text="hi?")
     #url = "https://file2directlink.herokuapp.com/65527557316299204660527228/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
-    url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
+    url = "https://nvms7-b.cdn.privatehost.com/videos1/87000/87521/87521_720p.mp4?&lr=382k&lra=5000k&c=9&ip=161.129.70.84&exp_time=1658778182&sign=c087872f40004d163e0f189b71f10d70"
 
     file_name  = url.split("/")[-1]
     download(url)
@@ -26,7 +26,7 @@ def welcome(Client,message):
     print("iim from end")
     message.reply_video(file_name)
     
-    os.remove(file_name1)
+    os.remove(file_name)
     print("endd")
 def download(url):
     a = urlparse(url)
