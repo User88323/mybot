@@ -15,15 +15,16 @@ bot = Client("my bot",
 def welcome(Client,message):
     message.reply_text(text="hi?")
     #url = "https://file2directlink.herokuapp.com/65527557316299204660527228/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
-    url = "https://file2directlink.herokuapp.com/68332126498289710050017404/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
+    url = "https://file2directlink.herokuapp.com/68684902031955331515121788/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
 
 
-    file_name  = url.split("/")[-1]
-    download(url)
+    #file_name  = url.split("/")[-1]
+    file_name1 = download(url)
+    #download(url)
     print("iim from end")
-    message.reply_video(file_name)
+    message.reply_video(file_name1)
     
-    os.remove(file_name)
+    os.remove(file_name1)
     print("endd")
 def download(url):
     a = urlparse(url)
@@ -38,7 +39,31 @@ def download(url):
             if chunk: # filter out keep-alive new chunks
                 f.write(chunk)
     
-    print(file_name)
-    return file_name
+    print(file_name1)
+    return file_name1
+def fetcher(pagel)
+    pagel = "https://ok./sites/realitykings/"
+    r = requests.get(bawal[i])
+    html = r.content
+    soup = BeautifulSoup(html,'html.parser')
+    	
+    ancr = soup.find_all('a')
+    output = []
+    lod = 0
+    for link in ancr:
+    	if (link.get('href').find("/video/") != -1):
+    	link = "https://ok.xxx/"+link.get('href')
+    	r = requests.get(link)
+    	source2 = r.content
+    	soup2 = BeautifulSoup(source2,'html.parser')
+    	div = soup2. find("a", {"class": "download-link"})
+    	cn = str(div)
+    	direct_l = cn[cn.find("http") : cn.find("style") - 2]
+    	output.append(direct_l)
+    	#update.message.reply_text(direct_l+"                          "+"Original_Link: "+link)
+    	lod = lod +1 
+    	print('____----______--- ' + str(lod) + '---_____---_____')
+    	print("\033c")
+return direct_l
             
 bot.run()
