@@ -17,7 +17,7 @@ bot = Client("my bot",
 def welcome(Client,message):
     message.reply_text(text="hi?")
     
-    url = "https://cdn.privatehost.com/videos1/88000/88345/88345_720p.mp4?&lr=382k&lra=5000k&c=9&ip=161.129.70.16&exp_time=1658778462&sign=2c34599603d785bc5e373fd43161676863e0f189b71f10d70"
+    url = "https://ok.xxx/get_file/6/212915fa341388953565d64a7df2cbb0/87000/87521/87521.mp4/?download=true&amp;download_filename=tiny-oiled-tits.mp4&amp;br=1000"
 
 
     a = urlparse(url)
