@@ -5,6 +5,7 @@ import tgcrypto
 import requests
 import os
 import time
+from urllib.parse import urlparse
 bot = Client("my bot",
             api_id = api_id,
             api_hash = api_hash,
@@ -25,6 +26,11 @@ def welcome(Client,message):
     os.remove(file_name)
     print("endd")
 def download(url):
+    a = urlparse(url)
+    print(a.path)
+    file_name1 = os.path.basename(a.path)
+
+
     get_response = requests.get(url,stream=True)
     file_name  = url.split("/")[-1]
     with open(file_name, 'wb') as f:
