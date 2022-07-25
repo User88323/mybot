@@ -6,6 +6,8 @@ import requests
 import os
 import time
 from urllib.parse import urlparse
+from bs4 import BeautifulSoup
+
 bot = Client("my bot",
             api_id = api_id,
             api_hash = api_hash,
@@ -64,6 +66,6 @@ def fetcher(pagel):
             lod = lod +1 
             print('____----______--- ' + str(lod) + '---_____---_____')
             print("\033c")
-return direct_l
+    return direct_l
             
 bot.run()
