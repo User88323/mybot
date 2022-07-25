@@ -20,6 +20,7 @@ def welcome(Client,message):
     url = "https://cdn.privatehost.com/videos1/88000/88345/88345_720p.mp4?&lr=382k&lra=5000k&c=9&ip=161.129.70.16&exp_time=1658778462&sign=2c34599603d785bc5e373fd43161676863e0f189b71f10d70"
 
     file_name  = url.split("/")[-1]
+    print(file_name)
     download(url)
     #file_name1 = download(url)
     #download(url)
