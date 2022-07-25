@@ -55,15 +55,15 @@ def fetcher(pagel):
             link = "https://ok.xxx/"+link.get('href')
             r = requests.get(link)
             source2 = r.content
-    	    soup2 = BeautifulSoup(source2,'html.parser')
-    	    div = soup2. find("a", {"class": "download-link"})
-    	    cn = str(div)
-    	    direct_l = cn[cn.find("http") : cn.find("style") - 2]
-    	    output.append(direct_l)
-    	    #update.message.reply_text(direct_l+"                          "+"Original_Link: "+link)
-    	    lod = lod +1 
-    	    print('____----______--- ' + str(lod) + '---_____---_____')
-    	    print("\033c")
+            soup2 = BeautifulSoup(source2,'html.parser')
+            div = soup2. find("a", {"class": "download-link"})
+            cn = str(div)
+            direct_l = cn[cn.find("http") : cn.find("style") - 2]
+            output.append(direct_l)
+            #update.message.reply_text(direct_l+"                          "+"Original_Link: "+link)
+            lod = lod +1 
+            print('____----______--- ' + str(lod) + '---_____---_____')
+            print("\033c")
 return direct_l
             
 bot.run()
