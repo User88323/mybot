@@ -17,7 +17,7 @@ bot = Client("my bot",
 def welcome(Client,message):
     message.reply_text(text="hi?")
     
-    url = "https://nvms3-b.cdn.privatehost.com/videos1/87000/87521/87521.mp4?&lra=5000k&c=9&ip=161.129.70.16&exp_time=1658779712&sign=bd59c5c2a51dff9be2dfdff98f110343"
+    url = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
 
 
     a = urlparse(url)
