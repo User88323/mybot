@@ -16,18 +16,26 @@ bot = Client("my bot",
 
 def welcome(Client,message):
     message.reply_text(text="hi?")
-    #url = "https://file2directlink.herokuapp.com/65527557316299204660527228/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
+    
     url = "https://cdn.privatehost.com/videos1/88000/88345/88345_720p.mp4?&lr=382k&lra=5000k&c=9&ip=161.129.70.16&exp_time=1658778462&sign=2c34599603d785bc5e373fd43161676863e0f189b71f10d70"
 
+
+    a = urlparse(url)
+    print(a.path)
+    file_namex = os.path.basename(a.path)
+
+
+    #url = "https://file2directlink.herokuapp.com/65527557316299204660527228/AgADtiEA/Bhool.Bhulaiyaa.2.2022.PreDvd.Hindi.480p_mkvCinemas.mkv"
+    
     file_name  = url.split("/")[-1]
     print(file_name)
     download(url)
     #file_name1 = download(url)
     #download(url)
     print("iim from end")
-    message.reply_video(file_name)
+    message.reply_video(file_namex)
     
-    os.remove(file_name)
+    os.remove(file_namex)
     print("endd")
 def download(url):
     a = urlparse(url)
@@ -43,7 +51,6 @@ def download(url):
                 f.write(chunk)
     
     print(file_name1)
-    return file_name1
 def fetcher(pagel):
     pagel = "https://ok./sites/realitykings/"
     r = requests.get(bawal[i])
